@@ -1,0 +1,5 @@
+# library(insol)
+library(tidyverse)
+RCYG <- read_csv("./R_CYG.csv")
+RCYG$JD <- as.integer(RCYG$JD)
+write_delim(RCYG,path="./rcyg.txt")
